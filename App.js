@@ -9,6 +9,7 @@ import { estilos } from "./src/style/estilos";
 import { Textos } from "./src/components/partials/Text";
 import InputsTexto from "./src/components/partials/TextInputs";
 import Pressavel from "./src/components/partials/Pressable";
+import Imagem from "./src/components/partials/Imagem";
 
 export default function App() {
 
@@ -37,22 +38,25 @@ export default function App() {
   };
   return (
     <View style={estilos.container}>
-      <Textos title="Faça a sua conversão aqui!" />
+      <View style={estilos.secondarycontainer}>
+        <Imagem style={estilos.Imagem} source={require('./src/assets/images/calculadora.png')} />
+      <Textos title="Faça a sua conversão de Graus para Fahrenheit aqui!" styles={estilos.titulo} />
       <InputsTexto
         onChangeText={setGraus}
         value={graus}
         title="Digite aqui"
         styles={estilos.inputs}
       />
-      <Pressavel onPress={calculoConversao}>
-        <Textos title="Teste" styles={estilos.Text}/>
+      <Pressavel onPress={calculoConversao} styles={estilos.botao}>
+        <Textos title="Calcular" styles={estilos.Text}/>
       </Pressavel>
       <Textos styles={estilos.Text} title={result} />
-      <Pressavel onPress={limpar}>
+      <Pressavel onPress={limpar} styles={estilos.botao}>
         <Textos title="Limpar" styles={estilos.Text} />
       </Pressavel>
 
       <StatusBar style="auto" />
+      </View>
     </View>
   );
 }

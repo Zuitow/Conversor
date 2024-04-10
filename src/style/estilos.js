@@ -6,7 +6,7 @@ export const estilos = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: ''
+      backgroundColor: 'white'
     },
     inputs: {
         width: '50%',
@@ -20,6 +20,29 @@ export const estilos = StyleSheet.create({
     },
     Text: {
         fontSize: 20,
-        marginTop: 10
+        color: 'gray',
+        textAlign: 'center'
+    },
+    botao: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '30%',
+        height: 45,
+        borderWidth: 1,
+        borderRadius: 15,
+        marginTop: 15,
+    },
+    secondarycontainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '95%',
+        height: 750,
+        borderWidth: 1,
+        borderColor: 'black',
+        borderRadius: 15,
+    },
+    Imagem: {
+        height: 150,
+        width: 150,
     }
   });
