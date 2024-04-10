@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { View } from "react-native";
+import { View, Image } from "react-native";
 import React, { useState } from "react";
 
 // Importação Estilos
@@ -39,7 +39,7 @@ export default function App() {
   return (
     <View style={estilos.container}>
       <View style={estilos.secondarycontainer}>
-        <Imagem style={estilos.Imagem} source={require('./src/assets/images/calculadora.png')} />
+        <Image style={estilos.Imagem} source={require('./src/assets/images/calculadora.png')}/>
       <Textos title="Faça a sua conversão de Graus para Fahrenheit aqui!" styles={estilos.titulo} />
       <InputsTexto
         onChangeText={setGraus}

@@ -36,7 +36,7 @@ export const estilos = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         width: '95%',
-        height: 750,
+        height: 800,
         borderWidth: 1,
         borderColor: 'black',
         borderRadius: 15,
@@ -44,5 +44,6 @@ export const estilos = StyleSheet.create({
     Imagem: {
         height: 150,
         width: 150,
+        marginBottom: 50
     }
   });
