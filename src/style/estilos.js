@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 
+//Componentização da página App.js inteira.
 export const estilos = StyleSheet.create({
     container: {
       flex: 1,
@@ -30,7 +31,6 @@ export const estilos = StyleSheet.create({
         height: 45,
         borderWidth: 1,
         borderRadius: 15,
-        marginTop: 15,
     },
     secondarycontainer: {
         alignItems: 'center',
@@ -45,5 +45,11 @@ export const estilos = StyleSheet.create({
         height: 150,
         width: 150,
         marginBottom: 50
-    }
+    },
+    TextResult: {
+        fontSize: 20,
+        color: 'black',
+        textAlign: 'center',
+        marginTop: 15
+    },
   });
